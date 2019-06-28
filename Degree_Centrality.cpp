@@ -1,12 +1,11 @@
 #include <bits/stdc++.h>
 
-#define SIZE 1000005
-
 using namespace std;
 
 int main()
 {
-    int arr[SIZE]={0},n,e,in1,in2;
+    int n,e,in1,in2;
+    vector<int> arr(n);
     scanf("%d %d",&n,&e);
     for(int i=0; i<e; i++){
         scanf("%d %d",&in1,&in2);
