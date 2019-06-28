@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-#define SIZE 100005
+#define SIZE 1000005
 
 using namespace std;
 
