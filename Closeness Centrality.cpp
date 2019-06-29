@@ -1,7 +1,3 @@
-//
-// Created by shiko on 2019-06-29.
-//
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -27,7 +23,7 @@ void Dijkstra(vector< vector<edge> >adjList,int n, int src)
     dist[src][src] = 0;
 
     priority_queue<edge> q;
-    q.push( edge(-1, src, 0) );
+    q.push( edge(-src, src, 0) );
 
     while( !q.empty() ) {
         edge e = q.top();	q.pop();
