@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
     int n,e,in1,in2;
-    vector<int> arr(n);
     scanf("%d %d",&n,&e);
+    vector<int> arr(n);
     for(int i=0; i<e; i++){
         scanf("%d %d",&in1,&in2);
         arr[in1] += 1;
