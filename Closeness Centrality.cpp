@@ -40,10 +40,14 @@ void Dijkstra(vector< vector<edge> >adjList,int n, int src)
             if( dist[src][ne.from] > dist[src][ne.to] + ne.w ) {
                 ne.w = dist[src][ne.from] = dist[src][ne.to] + ne.w;
                 q.push( ne );
+                edge nee (adjList[e.to][j].to,adjList[e.to][j].from,adjList[e.to][j].w);
+                q.push( nee );
             }
             if( dist[src][ne.to] > dist[src][ne.from] + ne.w ) {
                 ne.w = dist[src][ne.to] = dist[src][ne.from] + ne.w;
                 q.push( ne );
+                edge nee (adjList[e.to][j].to,adjList[e.to][j].from,adjList[e.to][j].w);
+                q.push( nee );
             }
         }
     }
