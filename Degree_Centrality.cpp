@@ -4,14 +4,19 @@ using namespace std;
 
 int main()
 {
-    int n,e,in1,in2;
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    int n,e,in1,in2,w;
     scanf("%d %d",&n,&e);
-    vector<int> arr(n);
+    vector<int> arr(n,0);
+
     for(int i=0; i<e; i++){
-        scanf("%d %d",&in1,&in2);
+        scanf("%d %d %d",&in1,&in2,&w);
         arr[in1] += 1;
         arr[in2] += 1;
     }
     for(int j=0; j<n; j++)
-        cout<<j<<" "<<arr[j]<<endl;
+        printf("%d\n",arr[j]);
 }
