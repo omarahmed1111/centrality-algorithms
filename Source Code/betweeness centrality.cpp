@@ -84,7 +84,8 @@ int between(int begin,int from,int x,vector< vector<int> >&p){
 }
 
 int main() {
-
+  freopen("input.txt", "r", stdin);
+  freopen("betweenness.txt", "w", stdout);
 	cin>>n>>m;
 	g.resize(n+1);
 	lp(i,m){
