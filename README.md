@@ -1,5 +1,8 @@
 # Centrality Algorithms Computation and Visualization
 
+![Application](visualization/assets/demo.png?raw=true "Title")
+
+
 This windows application offers the functionality of computing three different centrality metrics for a given undirected weighted network/graph:
 
 - Degree Centrality
@@ -25,10 +28,9 @@ Computation is made using C++, and the computed results can then be visualized t
 1. Fork or download repo as [zip](https://github.com/omarahmed1111/centrality-algorithms/archive/master.zip).
 2. In the repo directory run `cd ./visualization && npm install`.
 3. In the `input.txt` file found in the root of the repo, enter the representation of your network as follows:
-  1. The first line will contain two integers n,m where n is the number of nodes and m is the number of edges in the graph (1 < n < V, 0 < m < E ). 
-  2. This will be followed by m lines describing the edges of the graph. 
-  3. Each of the m lines will contain two integers a, b, c that represents an undirected edge
-    between nodes a and b with weight c.
+     1. The first line will contain two integers n,m where n is the number of nodes and m is the number of edges in the graph (1 < n < V, 0 < m < E ). 
+     2. This will be followed by m lines describing the edges of the graph. 
+     3. Each of the m lines will contain two integers a, b, c that represents an undirected edge between nodes a and b with weight c.
 4. execute `run.exe` to compute and visualize the results.
 
 ## How it works
