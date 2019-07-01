@@ -51,6 +51,8 @@ void Dijkstra(vector< vector<edge> >adjList,int n, int src)
 
 int main (void)
 {
+    freopen("input.txt", "r", stdin);
+    freopen("closeness.txt", "w", stdout);
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
