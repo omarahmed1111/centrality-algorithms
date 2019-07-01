@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <script src="/js/d3.v4.min.js"></script>
+    <script src="/js/script.js"></script>
+    <title>Network Metrics Visualization</title>
+  </head>
+  <body>
+    <div id="controls"></div>
+    <div id="layout">
+      <svg></svg>
+      <table></table>
+    </div>
+    <script>
+      var maxDegree = '<%= maxDegree %>';
+      var maxBetweenness = '<%= maxBetweenness %>';
+      d3.queue()
+        .defer(d3.json, 'computation.json')
+        .defer(d3.json, 'centrality-measures.json')
+        .await(createNetworkVisualization);
+    </script>
+  </body>
+</html>

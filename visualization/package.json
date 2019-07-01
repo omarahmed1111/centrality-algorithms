@@ -1,0 +1,19 @@
+{
+  "name": "network_metrics_visualization",
+  "version": "1.0.0",
+  "description": "Visualize different centrality metrics for a given network",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "upgrade": "rm -rf node_modules && npm install"
+  },
+  "author": "Ahmed Karaman",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "electron": "^5.0.6"
+  }
+}
